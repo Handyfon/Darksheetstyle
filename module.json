@@ -8,7 +8,7 @@
 	"styles": ["css/darksheet.css", "css/mce.css"],
 	 "socket": true,
     "url": "https://github.com/Handyfon/Darksheetstyle",
-    "manifest": "https://github.com/Handyfon/Darksheetstyle/master/module.json",
-    "download": "https://github.com/Handyfon/Darksheetstyle/master/darksheet-style.zip",
+    "manifest": "https://github.com/Handyfon/Darksheetstyle/blob/master/module.json",
+    "download": "https://github.com/Handyfon/Darksheetstyle/blob/master/darksheet-style.zip",
 	"minimumCoreVersion": "0.5.1"
 }
