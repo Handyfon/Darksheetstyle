@@ -1,0 +1,14 @@
+{
+	"name": "darksheet-style",
+	"title": "styling for the darksheet 5 sheet",
+	"description": "Adds styling to the 5e sheet",
+	"version": "1.0",
+	"author": "Handyfon#8390",
+	"systems": ["dnd5e"],
+	"styles": ["css/darksheet.css", "css/mce.css"],
+	 "socket": true,
+    "url": "https://github.com/Handyfon/Darksheetstyle",
+    "manifest": "https://github.com/Handyfon/Darksheetstyle/master/module.json",
+    "download": "https://github.com/Handyfon/Darksheetstyle/master/darksheet-style.zip",
+	"minimumCoreVersion": "0.5.1"
+}
