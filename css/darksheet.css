@@ -1,93 +1,56 @@
+#loading {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 120px;
+    width: calc(100% - 480px);
+    height: 36px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #000;
+    box-shadow: 0 0 0 1000px #00000066;
+    border-radius: 4px;
+    filter: brightness(1.2);
+    z-index: 100;
+}
+#loading #loading-bar {
+    position: relative;
+    margin: 1px;
+    height: 36px;
+    border: 3px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1000px #00000066;
+    background: linear-gradient(to right, #3f6693,#3f6693,#3f6693, #ff0083);
+    filter: drop-shadow(2px 4px 6px black);
+    filter: contrast(1.2);
+}
+#loading #context {
+    left: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#loading label {
+    line-height: 16px;
+    position: absolute;
+    top: -4px;
+    padding: 0 5px;
+    font-size: 18px;
+    color: #FFF;
+    background:0;
+    text-shadow: 1px 1px 6px #000;
+    filter: drop-shadow(0px 0px 10px black);
+}
+#loading #progress {
+    top: -4px;
+    right: 0;
+    padding: 0 8px;
+    margin-top: 10px;
+}
 /*TRAINING*/
-.ammostyle:hover {
-    color: #e6e7e9 !important;
-    text-shadow: 0 0 0 !important;
-    background-image: linear-gradient(#243b5500, #474a5dfc);
-}
-.gray{
-    color: #b5b1d4;
-}
-.white{
-	color: white !important;
-}
-.ammostyle {
-    padding: 7px 15px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border: solid 1px;
-    width: max-content;
-    height: max-content;
-    /* background-image: linear-gradient(#243b5500, #474a5dfc); */
-    background-image: linear-gradient(#474a5dfc, #243b5500);
-}
-.spelldc{
-	margin-right: 5px;
-    text-align: center;
-    margin-top: 2px;
-    background: #182739;
-    color: #a8a7c9 !important;
-    border: 1px dotted #b5b1d4;
-}
 input[type="checkbox"] {
     transform: scale(1);
 }
 input[type="text"]::placeholder {
     color: #8f97a2;
-}
-.titlecheckbox{
-    display: inline-flex;
-    cursor: pointer;
-    position: relative;
-	margin-top:2px;
-	width: 10px !important;
-	height: 10px !important;
-}
-.titlecheckbox{
-	margin-bottom: 3px !important;
-}
-.titlecheckbox > span {
-    color: #8c2b2b;
-}
-.titlecheckbox > input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    outline: none;
-    transition-duration: 0.2s;
-    background-color: #b5b1d400;
-    border-style: solid;
-    border-width: 1px;
-    cursor: pointer;
-    width: 10px !important;
-    height: 10px !important;
-    border-color: #1e3048;
-    border-bottom-style: dotted;
-    border-top-style: dotted;
-    padding: 10px;
-    transform: scale(0.8);
-}
-.activecondition{
-	color: #ff8989;
-    text-shadow: 0 0 2px red;
-}
-.conditiontext:hover{
-	text-shadow: 0 0 5px;
-}
-.titlecheckbox > input:checked {
-    border: 1px solid #c7e5ff;
-    background-color: #233953;
-    padding: 10px;
-}
-.titlecheckbox > input:checked + span::before {
-    content: '\2713';
-    display: block;
-    color: #000000;
-    position: absolute;
-    margin-top: -4px;
-    margin-left: 6px;
-    font-size: 15px;
-    color: #b5b1d4;
 }
 .green{
     background-image: linear-gradient(#245531, #143017) !important;
@@ -100,84 +63,6 @@ input[type="text"]::placeholder {
 .black{
 	background: black !important;
     background-size: contain !important;
-}
-.dnd5e.sheet.item .sheet-body .item-properties {
-    flex: 0 0 200px;
-    margin: 5px 5px 5px 0;
-    padding-right: 5px;
-    border-right: 2px groove #eeede0;
-}
-/*CHECK SECTION ON THE DD TAB*/
-
-label.successatcost.rollable.check:hover {
-    color: #000000 !important;
-    text-shadow: 0 0 10px red;
-    cursor: pointer;
-    background: gold !important;
-}
-label.criticalF.rollable.check:hover {
-    color: #000000 !important;
-    text-shadow: 0 0 10px #f0ff00;
-    cursor: pointer;
-    background: #ff5200 !important;
-}
-label.criticalS.rollable.check:hover {
-    color: #000000 !important;
-    text-shadow: 0 0 10px #f0ff00;
-    cursor: pointer;
-    background: #28ff00 !important;
-}
-label.treatwound.rollable.check:hover {
-    color: #000000 !important;
-    text-shadow: 0 0 10px #ffd4d4 !important;
-    cursor: pointer;
-    background: #48bf98 !important;
-}
-label.healwound.rollable.check:hover{
-    color: #000000 !important;
-    text-shadow: 0 0 10px #ffd4d4 !important;
-    cursor: pointer;
-    background: #48bf98 !important;
-}
-label.check.dicelabel2.staminacheck.rollable:hover {
-    color: #f9f9f9 !important;
-    text-shadow: 0 0 10px #ffd4d4 !important;
-    cursor: pointer;
-    background: #4c3100 !important;
-}
-/*CHECK SECTION END*/
-.cost {
-	text-align: center;
-    color: #eaeaea;
-    text-shadow: 0 0 5px red;
-    font-size: 15px;
-}
-.free {
-    text-align: center;
-    color: #eaeaea;
-    text-shadow: 0 0 3px #ebff00;
-    font-size: 15px;
-}
-.critfailh2{
-	color: red;
-	text-shadow: 0 0 5px red;
-	text-align: center;
-}
-.critsuccessh2{
-    color: #3fff00;
-    text-shadow: 0 0 5px #0bff00;
-	text-align: center;
-}
-.successatcH2{
-	color:gold;
-	text-align: center;
-}
-.dnd5e.sheet.actor .spellcasting-ability select {
-    margin: 0;
-    flex: none;
-}
-code.furnace-macro-syntax-highlight.handlebars.hljs {
-    background: bisque;
 }
 .window-app {
     display: flex;
@@ -195,7 +80,7 @@ code.furnace-macro-syntax-highlight.handlebars.hljs {
     height: 30px;
 }
 .dnd5e.sheet.item {
-    min-height: 450px;
+    min-height: 420px;
     min-width: 600px;
 }
 .tox.tox-tinymce {
@@ -327,12 +212,6 @@ p#calendar-time {
     border: 4px solid #00000000;
     margin: 5px;
     border-radius: 0;
-}
-#chat-log .message.blind {
-    border: 2px solid #6b476b;
-    background-image: linear-gradient(#c7c7c7, #f7f7f7);
-    background: #7b7b7b4f;
-	border: dotted #ffffff 1px;
 }
 #chat-log .message .table-result img.result-image {
     background: #99334b;
@@ -723,34 +602,19 @@ max-width: 100%;
 /*#chat-log .message {
     background-image: linear-gradient(#243B55, #141E30);
 }*/
-#chat-log .message .message-header {
-    line-height: 20px;
-    color: #4b4a44 !important;
-    /* background: #473d6f; */
-    padding: 0px 5px 0px 5px;
-}
-
 #chat-log .message {
     background-image: linear-gradient(#243B55, #141E30);
     background: #0000004f;
     border-radius: 0;
     border-color: #000000;
+    /* border-width: 1px; */
     border-left: 0px;
     border-top: 0px;
     border-right: 0px;
     filter: drop-shadow(2px 4px 6px black);
-    padding-left: 10px;
-    padding-right: 10px;
 }
 #chat-log .message .message-header .message-sender {
-    color: #b5b1d4;
-}
-#chat-log .message .message-header .message-metadata {
-    flex: 2;
-    text-align: right;
-    font-size: 12px;
-    color: #4c447b;
-    text-shadow: 0 0 2px #473d6f;
+    color: whitesmoke;
 }
 #chat-log .message .table-result h4.result-text {
     line-height: 16px;
@@ -881,17 +745,7 @@ li.skill.flexrow:hover {
     color: #b5b1d4;
     text-shadow: 0;
 }
-.dnd5e.chat-card .card-header {
-    padding: 3px 0;
-    border-top: 2px groove #4c447b;
-    border-bottom: 2px groove #4c447b;
-    padding: 0px 5px 0 5px;
-}
-.dnd5e.chat-card .card-header img {
-    flex: 0 0 36px;
-    margin-right: 5px;
-    margin-top: 4px;
-}
+
 .dnd5e.chat-card .card-header h3 {
     flex: 1;
     margin: 0;
@@ -907,22 +761,8 @@ li.skill.flexrow:hover {
     color: white;
     border-bottom: 3px solid #7a7971;
 }
-a.inline-roll.inline-result {
-    color: white !important;
-    background: #4a4278;
 }
-a.entity-link, a.inline-roll {
-    background: #4a4278;
-    padding: 1px 4px;
-    border: 1px solid #4b4a44;
-    border-radius: 2px;
-    white-space: nowrap;
-    word-break: break-all;
-}
-a.inline-roll.roll {
-    background: #4c447b !important;
-	color:white !important;
-}
+
 .dnd5e.sheet .filter-list .filter-item {
     background-image: linear-gradient(#474a5db5, #243b5563) !important;
     border-radius: 2px;
@@ -1979,9 +1819,9 @@ select.hitdice.afflictionselection{
     padding: 10px;
 }
 
-/*.rollable:hover, a:hover {
+.rollable:hover, a:hover {
 	text-shadow: 0 0 5px rgba(255, 100, 0, 1), 0 0 10px rgba(255, 100, 0, 1), 0 0 15px rgba(255, 100, 0, 1) !important;
-}*/
+}
 a.entity-link {
 	background: #141F31 !important;
 }
@@ -2273,7 +2113,7 @@ display: inline
     margin-left: 10px;
     border: groove 2px #727584;
     padding: 15px;
-    margin-left: 13px;
+    margin-left: 8px;
 }
 .part4:hover {
     filter: brightness(1.3);
@@ -2290,6 +2130,7 @@ display: inline
     margin: 0px 50px 0px 50px;
     text-align: center;
     border: 1px solid black;
+    border-radius: 3px;
 }
 h3.burnoutclick:hover {
     color: #243b55 !important;
@@ -2302,7 +2143,6 @@ label.burnoutclick:hover {
 text-align:center;
 margin-top:15px;
 }
-
 .darksheetheader{
   color:#b5b1d4;
   font-size:20px;
@@ -2313,31 +2153,6 @@ margin-top:15px;
 .exhaustionbox{
     width: min-content;
 }
-.conditionbutton {
-    margin-left: 2px;
-    padding: 2px 1px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border: 1px solid #5f5e5e;
-    position: absolute;
-    background-image: linear-gradient(#474a5dfc, #243b5500);
-}
-.conditionbutton:hover {
-    background-image: linear-gradient(#243b5500, #474a5dfc) !important;
-    border: solid 1px #b5b3a4 important;
-}
-.section0{
-	margin: 0 25px 20px 25px;
-    padding: 20px;
-    background-image: linear-gradient(#553d2400, #5b5d67) !important;
-    border: groove 2px #1d2f46;
-	justify-content: space-evenly;
-	transition-duration: 0.2s;
-}
-.section0:hover{
-	    filter: brightness(1.3);
-}
-
 .section1 {
 	margin-top: 20px;
     display: flex;
@@ -2353,26 +2168,6 @@ margin-top:15px;
     border: groove 2px #5e6069;
 }
 
-.settings {
-    margin-right: 20px;
-    margin-left: 25px;
-    margin-bottom: 20px;
-    height: 120px;
-    background: linear-gradient(#b5b1d4ad, #b5b1d4);
-    padding: 20px;
-    text-align: center;
-    color: black;
-    border: groove 2px #5e6069;
-}
-.settingsheader{
-	margin: -16px 0 0.5rem;
-    font-size: 15px;
-    border-bottom: 1px solid;
-    font-size: 2;
-}
-.settings:hover{
-	    filter: brightness(1.1);
-}
 
 .section3 {
 	margin-top: 20px;
