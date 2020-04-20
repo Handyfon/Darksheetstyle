@@ -1,3 +1,4 @@
+
 #loading {
     display: none;
     position: fixed;
@@ -27,6 +28,22 @@
     left: 5px;
     margin-top: 10px;
     font-size: 20px;
+}
+.settings {
+    background: #b5b1d4;
+    color: black! important;
+}
+.section0 {
+    margin: 0 25px 20px 25px;
+    padding: 20px;
+    border: groove 2px #1d2f46;
+    justify-content: space-evenly;
+    transition-duration: 0.2s;
+    background-image: linear-gradient(#553d2400, #fdfdfd4d) !important;
+}
+.activecondition {
+    text-shadow: 0 0 2px #000000;
+    color: #ff5f5f;
 }
 #loading label {
     line-height: 16px;
@@ -84,7 +101,8 @@ input[type="text"]::placeholder {
     min-width: 600px;
 }
 .tox.tox-tinymce {
-    height: 880px;
+    background: #8a8ca8;
+    /* border: white 1px solid; */
 }
 .better-npc-sheet input[type=text] {
     border: none;
@@ -1852,6 +1870,9 @@ p {
 .biography{
     color: gray;
 }
+.gray{
+    border-color: #b5b1d4;
+}
 #flaw{}
 #flaw:valid {
     color: #b5b1d4 !important;
@@ -2045,7 +2066,10 @@ form button {
 	 background: rgba(0, 0, 0, 0.9) !important;
 }
 .mce-content-body {
-    color: #b5b1d4;
+    background: white !important;
+}
+body {
+    background: white !important;
 }
 .journal-sheet form button[type="submit"] {
     color: #b5b1d4;
@@ -2233,6 +2257,21 @@ margin-top:15px;
 .check.black {
 	background: black;
     padding: 2px 4px 2px 4px;
+}
+#module-management .package-list .package-title, #module-management .package-list .package-metadata, #module-management .package-list .package-description {
+    color: #b5b1d4;
+}
+.ammostyle {
+    padding: 7px 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: solid 1px;
+    width: max-content;
+    height: max-content;
+    background-image: linear-gradient(#474a5dfc, #243b5500) !important;
+}
+.ammostyle:hover {
+    background-image: linear-gradient(#243b5500, #474a5dfc) !important;
 }
 .inventoryslots{
     width: 30px;
