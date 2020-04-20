@@ -509,7 +509,7 @@ border-width: 5px;
 #pause img {
     position: absolute;
     bottom: 9% !important;
-    left: calc(50% - 64px);
+    left: calc(45%);
     height: 128px;
     width: 128px;
     /* opacity: 0.2; */
@@ -518,6 +518,17 @@ border-width: 5px;
     -webkit-animation: rotation 1s infinite;
     top: unset;
     filter: invert(1);
+}
+.dnd5e.sheet.actor.character .sheet-header .charlevel .xpbar {
+    width: 100%;
+    flex: 0 0 8px;
+    background: #666;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin-top: -50px;
+}
+.dnd5e.sheet.actor.character .sheet-header .charlevel .xpbar .bar {
+    background: #b5b1d4;
 }
 #pause h3 {
     margin: 0;
@@ -531,7 +542,10 @@ border-width: 5px;
     z-index: 61;
     color: #EEE;
     filter: sepia(1);
-	text-shadow: none;
+    text-shadow: none;
+    bottom: 10% !important;
+    left: calc(45.8%);
+    left: calc(44%);
 }
 #pause.paused {
     z-index: 1;
