@@ -27,6 +27,12 @@ textarea {
     /* filter: brightness(1.2); */
     z-index: 100;
 }
+.sidebar-tab .directory-list .directory-item h3, .sidebar-tab .directory-list .directory-item h4 {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+}
 #sidebar > * {
     background-color: #243b55;
     background-image: linear-gradient(#243b5573, #474a5ded);
