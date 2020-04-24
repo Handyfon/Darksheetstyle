@@ -9,9 +9,41 @@ textarea:focus {
     background: #1f2737 !important;
     color: white !important;
 }
-
+.roll-table-config ol.table-results .table-header {
+    background: rgb(65, 71, 91);
+    color: #c7e5ff;
+    border: 1px solid #CCC;
+    line-height: 24px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
 textarea {
     border: 1px solid #b5b1d4;
+}
+.dnd5e.sheet.actor .spell-school, .dnd5e.sheet.actor .spell-action, .dnd5e.sheet.actor .spell-target {
+    flex: 0 0 100px;
+    font-size: 12px;
+    color: #d2d2d2;
+    text-align: center;
+    border-right: 1px solid #c9c7b8;
+}
+.spell-mathead {
+    flex: 0 0 150px;
+    font-size: 12px;
+    color: #cacbcb;
+    text-align: center;
+    border-right: 1px solid #c9c7b8;
+}
+a.inline-roll.roll {
+    background: #243b55;
+    /* border: 1px black; */
+    border-style: groove;
+}
+.dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.active, .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.active {
+    color: #d9dad6;
+}
+.dnd5e.sheet.actor.character .inventory .item-controls .item-toggle, .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle {
+    color: #7d7c73;
 }
 #loading {
     display: none;
