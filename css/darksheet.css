@@ -2510,19 +2510,19 @@ form.editable.flexcol.black {
 /*NEW COLORS ======================*/
 @font-face {
     font-family: fire;
-    src: url(http://darkest-harvest.de/modules/darksheet-style/fonts/chp-fire.ttf) format('truetype');
+    src: url(/modules/darksheet-style/fonts/chp-fire.ttf) format('truetype');
 }
 @font-face {
     font-family: water;
-    src: url(http://darkest-harvest.de/modules/darksheet-style/fonts/DrippyWatercolor.ttf) format('truetype');
+    src: url(/modules/darksheet-style/fonts/DrippyWatercolor.ttf) format('truetype');
 } 
 @font-face {
     font-family: earth;
-    src: url(http://darkest-harvest.de/modules/darksheet-style/fonts/quarrystone.ttf) format('truetype');
+    src: url(/modules/darksheet-style/fonts/quarrystone.ttf) format('truetype');
 }
 @font-face {
     font-family: air;
-    src: url(http://darkest-harvest.de/modules/darksheet-style/fonts/SomethingLight-L3VAD.ttf) format('truetype');
+    src: url(/modules/darksheet-style/fonts/SomethingLight-L3VAD.ttf) format('truetype');
 } 
 .dnd5e.sheet.actor .inventory-list .item-detail {
     font-size: inherit !important;
