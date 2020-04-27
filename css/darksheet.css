@@ -17,6 +17,16 @@ textarea:focus {
     margin-bottom: 3px;
     font-weight: bold;
 }
+form .form-group, form .form-group-stacked {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    background: #0000002b;
+    padding: 10px;
+    color: white;
+    flex-wrap: wrap;
+    margin: 3px 0;
+}
 textarea {
     border: 1px solid #b5b1d4;
 }
@@ -923,21 +933,11 @@ li.skill.flexrow:hover {
 
 .trainingslabel {
     margin-right: 0px;
-    font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+    font-family: inherit;
     text-align: right;
     margin-top: 5px;
     font-size: 25px;
-    color: #b5b1d4;
-    position: absolute;
-}
-.spentlable {
-    margin-right: 0px;
-    margin-left: 10px;
-    font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
-    text-align: right;
-    margin-top: 5px;
-    font-size: 25px;
-    color: #b5b1d4;
+    color: inherit;
     position: absolute;
 }
 .spentlable{
@@ -947,7 +947,6 @@ margin-left: 10px;
     text-align: right;
     margin-top: 5px;
     font-size: 25px;
-	color:#b5b1d4 !important;
 	position:absolute;
 }
 .trainingssummary{
@@ -1036,9 +1035,6 @@ margin-left: 10px;
 .dnd5e.sheet.item .sheet-header .item-subtitle {
     color: #b5b1d4;
     text-shadow: 0 0 23px;
-}
-.dnd5e.sheet .sheet-header h1 input {
-    color: #b5b1d4 !important;
 }
 
 .form .notes {
@@ -1586,7 +1582,7 @@ margin-bottom: 3px !important;
 
 .deathsavelabel {
     margin-top: 8px;
-    font-family: "Signika", "Palatino Linotype", serif !important;
+    font-family: inherit !important;
     margin-left: 3px;
     margin-right: -3px;
 }
@@ -1701,7 +1697,7 @@ img.macro-icon:hover {
 .dnd5e .form-header {
     margin: 0 0 0.25em 0;
     padding: 0 2px;
-    font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+        font-family: inherit;
     font-size: 20px;
     font-size: 24px;
     border-top: 2px groove #eeede0;
@@ -2356,7 +2352,6 @@ text-align:center;
 margin-top:15px;
 }
 .darksheetheader{
-  color:#b5b1d4;
   font-size:20px;
   text-align:center;
 }
@@ -2379,7 +2374,6 @@ margin-top:15px;
     text-align: center;
     border: groove 2px #5e6069;
 }
-
 
 .section3 {
 	margin-top: 20px;
@@ -2514,6 +2508,217 @@ form.editable.flexcol.black {
     color: #dcddde;
 }
 /*NEW COLORS ======================*/
+@font-face {
+    font-family: fire;
+    src: url(http://darkest-harvest.de/modules/darksheet-style/fonts/chp-fire.ttf) format('truetype');
+}
+@font-face {
+    font-family: water;
+    src: url(http://darkest-harvest.de/modules/darksheet-style/fonts/DrippyWatercolor.ttf) format('truetype');
+} 
+@font-face {
+    font-family: earth;
+    src: url(http://darkest-harvest.de/modules/darksheet-style/fonts/quarrystone.ttf) format('truetype');
+}
+@font-face {
+    font-family: air;
+    src: url(http://darkest-harvest.de/modules/darksheet-style/fonts/SomethingLight-L3VAD.ttf) format('truetype');
+} 
+.dnd5e.sheet.actor .inventory-list .item-detail {
+    font-size: inherit !important;
+}
+.dnd5e .tag {
+    font-family: "Signika", "Palatino Linotype", serif !important;
+}
+.dnd5e.sheet.actor .inventory-filters .currency {
+    font-size: inherit !important;
+}
+.dnd5e.sheet .filter-list .filter-item {
+    font-size: inherit !important;
+}
+/*PLANE-OF-FIRE=======================================================*/
+form.editable.flexcol.plane-of-fire {
+    background-color: red;
+    color: #ff7676;
+    font-family: fire !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.11), rgb(80, 0, 0) ), url(https://img.wallpapersafari.com/desktop/1920/1080/87/55/v6czOm.jpg);
+    background-size: cover;
+    /* filter: saturate(2.5); */
+}
+section.sheet-body.plane-of-fire {
+background-image: linear-gradient(#243b5500, #d48f5494) !important;
+}
+section.center-pane.plane-of-fire {
+background-image: linear-gradient(#243b5500, #d48f5494) !important;
+}
+ol.inventory-list.plane-of-fire {
+background-image: linear-gradient(#243b5500, #d48f5494) !important;
+}
+.dnd5e.sheet.actor ul.skills-list.plane-of-fire {
+background-image: linear-gradient(#243b5500, #d48f5494) !important;
+}
+.part1.plane-of-fire.allparts {
+    background-image: linear-gradient(#553d24a6, #167916d4) !important;
+}
+.part2.plane-of-fire.allparts {
+    background-image: linear-gradient(#5a276a7d, #0000ff91) !important;
+}
+.part3.plane-of-fire.allparts {
+    background-image: linear-gradient(#ef030300, #a26900) !important;
+}
+.part4.plane-of-fire {
+    background: linear-gradient( rgba(255, 255, 255, 0), rgba(179, 0, 0, 0.72) ) !important;
+    color: #ff7676;
+}
+.checks.plane-of-fire {
+    background-image: linear-gradient(#490a477d, #311d6f87) !important;
+    background: 0;
+}
+nav.sheet-navigation.tabs.plane-of-fire {
+    color: red !important;
+    font-family: fire;
+    padding-bottom: 5px;
+    filter: hue-rotate(161deg);
+}
+
+/*PLANE-OF-Water=======================================================*/
+form.editable.flexcol.plane-of-water {
+    background-color: #0019ff;
+    color: #b8d1ff;
+    font-family: water !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.11), rgb(0, 2, 80) ), url(http://darkest-harvest.de/modules/darksheet-style/img/water.jpg);
+    background-size: cover;
+    /* filter: saturate(2.5); */
+}
+section.sheet-body.plane-of-water {
+    background-image: linear-gradient(#243b5500, #6e54d494) !important;
+}
+section.center-pane.plane-of-water {
+    background-image: linear-gradient(#243b5500, #6e54d494) !important;
+}
+ol.inventory-list.plane-of-water {
+    background-image: linear-gradient(#243b5500, #6e54d494) !important;
+}
+.dnd5e.sheet.actor ul.skills-list.plane-of-water {
+    background-image: linear-gradient(#243b5500, #6e54d494) !important;
+}
+
+.part4.plane-of-water {
+    background-image: linear-gradient(#243b5500, #6e54d494) !important;
+    color: #b8d1ff;
+}
+.checks.plane-of-water {
+    background-image: linear-gradient(#490a477d, #311d6f87) !important;
+    background: 0;
+}
+nav.sheet-navigation.tabs.plane-of-water {
+    font-family: water;
+    padding-bottom: 5px;
+    filter: hue-rotate(0deg);
+}
+h4.deathsavelabel.woundroll.rollable {
+    font-size: inherit !important;
+}
+h4.skill-name.rollable {
+    font-size: inherit !important;
+}
+/*PLANE-OF-Earth=======================================================*/
+form.editable.flexcol.plane-of-earth {
+    background-color: #383434;
+    color: #ababab;
+    font-family: earth !important;
+    background: linear-gradient( rgba(132, 132, 132, 0.11), rgb(0, 0, 0) ), url(http://darkest-harvest.de/modules/darksheet-style/img/earth.jpg);
+    background-size: cover;
+    /* filter: saturate(2.5); */
+    font-size: 20px !important;
+}
+section.sheet-body.plane-of-earth {
+	background-image: linear-gradient(#243b5500, #4d454c) !important;
+}
+section.center-pane.plane-of-earth {
+    background-image: linear-gradient(#243b5500, #4d454c) !important;
+}
+ol.inventory-list.plane-of-earth {
+    background-image: linear-gradient(#243b5500, #4d454c) !important;
+}
+.dnd5e.sheet.actor ul.skills-list.plane-of-earth {
+    background-image: linear-gradient(#243b5500, #4d454c) !important;
+}
+
+.part4.plane-of-earth {
+    background-image: linear-gradient(#243b5500, #4d454c) !important;
+    color: #ababab;
+}
+.checks.plane-of-earth {
+    background-image: linear-gradient(#243b5500, #4d454c) !important;
+    background: 0;
+}
+nav.sheet-navigation.tabs.plane-of-earth {
+    font-family: earth;
+    padding-bottom: 5px;
+    font-size: 25px;
+    filter: grayscale(1);
+}
+/*PLANE-OF-Air=======================================================*/
+form.editable.flexcol.plane-of-air {
+    background-color: #ffffff;
+    color: #dcf0ff;
+    /* text-shadow: 0 0 2px; */
+    font-family: air !important;
+    background: linear-gradient( rgba(222, 229, 255, 0.11), rgb(0, 0, 0) ), url(http://darkest-harvest.de/modules/darksheet-style/img/wind.jpg);
+    background-size: cover;
+    font-size: 13px;
+    /* filter: saturate(2.5); */
+}
+.tab.biography.flexcol.plane-of-air.active {
+    color: #e1e5e8;
+    border-color: white;
+}
+header.sheet-header.flexrow.plane-of-air {
+    background: #1b497fa3;
+}
+section.sheet-body.plane-of-air {
+    background-image: linear-gradient(#243b5500, #5886a9) !important;
+}
+section.center-pane.plane-of-air {
+    background-image: linear-gradient(#243b5500, #5886a9) !important;
+}
+ol.inventory-list.plane-of-air {
+    background-image: linear-gradient(#243b5500, #5886a9) !important;
+}
+.dnd5e.sheet.actor ul.skills-list.plane-of-air {
+    background-image: linear-gradient(#243b5500, #5886a9) !important;
+}
+.part1.plane-of-air.allparts {
+    background-image: linear-gradient(#10746b9e, #316931d9) !important;
+}
+.part2.plane-of-air.allparts {
+    background-image: linear-gradient(#4e9696b8, #0000ff47) !important;
+}
+.part3.plane-of-air.allparts {
+    background-image: linear-gradient(#716038, #b374006e) !important;
+}
+.part4.plane-of-air {
+    background-image: linear-gradient(#243b5500, #133f73ad) !important;
+}
+.checks.plane-of-air {
+    background-image: linear-gradient(#243b5500, #133f73ad) !important;
+    background: 0;
+}
+nav.sheet-navigation.tabs.plane-of-air {
+    font-family: air;
+    padding-bottom: 5px;
+    filter: drop-shadow(0px 2px 2px gray);
+    color: #259ae4;
+    font-size: 17px;
+    border-bottom: solid 1px #88d1f6;
+}
+h4.deathsavelabel.woundroll.rollable {
+    font-size: inherit !important;
+}
+h4.skill-name.rollable {
+    font-size: inherit !important;
+}
 /*DISCORDBLACK=======================================================*/
 form.editable.flexcol.discord-black {
     background: #202225;
