@@ -1,5 +1,5 @@
 # Darksheetstyle
-Darksheet Stying
+Darksheet Styling
 
 INSTALL INSTRUCTIONS: Use the manifest to install the module:
 Manifest: https://raw.githubusercontent.com/Handyfon/Darksheetstyle/master/module.json
