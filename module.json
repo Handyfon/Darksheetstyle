@@ -2,7 +2,7 @@
 	"name": "darksheet-style",
 	"title": "styling for the darksheet 5 sheet",
 	"description": "Adds styling to the 5e sheet",
-	"version": "2.1",
+	"version": "3.0",
 	"author": "Handyfon#8390",
 	"systems": ["dnd5e", "pf1"],
 	"styles": ["css/darksheet.css", "css/mce.css"],

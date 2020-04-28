@@ -17,6 +17,9 @@ textarea:focus {
     margin-bottom: 3px;
     font-weight: bold;
 }
+.dnd5e.sheet.actor.character .counters .death-saves {
+    flex: 1.2;
+}
 form .form-group, form .form-group-stacked {
     clear: both;
     display: flex;
@@ -103,8 +106,17 @@ a.inline-roll.roll {
     font-size: 20px;
 }
 .settings {
-    background: #b5b1d4;
-    color: black! important;
+    background: #3e2a3e;
+    color: white! important;
+}
+.settings {
+    margin-right: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+    border: groove 2px #5e6069;
 }
 section.sheet-body.blue {
     background-image: linear-gradient(#243b5500, #474a5dfc) !important;
@@ -1059,18 +1071,27 @@ margin-left: 10px;
     text-shadow: 0px 0px 6px black;
 }
 .dnd5e.sheet.actor .ability-scores .ability {
-    background-image: linear-gradient(#3a3a3a73, #59595900) !important;
-    border: 2px groove #afabce;
+    background-image: linear-gradient(#00000054, #ffffff00) !important;
+    border: inherit;
+    background: #0000002b;
+    border: 1px solid #b8d1ff;
 }
 .dnd5e.sheet.actor ul.attributes li.attribute:hover {
-    filter: brightness(1.5) drop-shadow(0px 0px 6px black);
-    background: #ffffff24;
-    text-shadow: 0px 0px 6px black;
+    background-image: linear-gradient(#3a3a3a73, #59595900) !important;
+    border: inherit;
+    background: #0000002b;
 }
-
 .dnd5e.sheet.actor ul.attributes li.attribute {
-    background-color: rgba(255, 20, 20, 0.03);
-    border: 2px groove #b5b1d4;
+    background-image: linear-gradient(#00000054, #ffffff00) !important;
+    border: inherit;
+    background: #0000002b;
+    border: 1px solid #c7e5ff;
+}
+.dnd5e.sheet.actor ul.attributes li.attribute:hover {
+    background-image: linear-gradient(#00000054, #ffffff00) !important;
+    border: inherit;
+    background: #0000002b;
+    border: 1px solid #c7e5ff;
 }
 .dnd5e.sheet .sheet-header {
     border-bottom: 2px groove #b5b1d4;
@@ -1552,6 +1573,7 @@ margin-bottom: 3px !important;
     border-width: 1px;
     cursor: pointer;
     width: 20px;
+    background: #1d171759;
     height: 20px;
     border-color: #8c2b2b;
     border-bottom-style: dotted;
@@ -1562,7 +1584,7 @@ margin-bottom: 3px !important;
     flex: 0 0 100%;
     border-bottom: 2px groove #eeede0;
     margin-top: px;
-    border-top: 2px solid #233953;
+    border-top: 0;
 }
 .deathcheckbox > input:checked {
     border: 1px solid #b84141;
@@ -1732,7 +1754,8 @@ img.macro-icon:hover {
     border-color: #0600ffc2;
     border-bottom-style: dotted;
     border-top-style: dotted;
-	padding: 10px;
+    padding: 10px;
+    background: #00000052;
 }
 .watercheckbox.green > input {
     -webkit-appearance: none;
@@ -1814,9 +1837,10 @@ img.macro-icon:hover {
     width: 20px;
     height: 20px;
     border-color: green;
+    background: #00000052;
     border-bottom-style: dotted;
     border-top-style: dotted;
-	padding: 10px;
+    padding: 10px;
 }
 
 .foodcheckbox > input:checked {
@@ -2004,7 +2028,7 @@ p {
 }
 #flaw{}
 #flaw:valid {
-    color: #b5b1d4 !important;
+    color: inherit !important;
     text-align: left;
     border-bottom: solid 1px !important;
 }
@@ -2102,6 +2126,9 @@ input.biotextflex {
 input.biotextflex :break{
 	word-wrap: break-word !important;
     word-break: break-all !important;
+}
+input.bio {
+    text-align: center;
 }
 input.biotextflex:hover {
     height: 15px !important;
@@ -2523,6 +2550,22 @@ form.editable.flexcol.black {
 @font-face {
     font-family: air;
     src: url(/modules/darksheet-style/fonts/SomethingLight-L3VAD.ttf) format('truetype');
+}
+@font-face {
+    font-family: ice;
+    src: url(/modules/darksheet-style/fonts/IGLOO.TTF) format('truetype');
+} 
+@font-face {
+    font-family: ice2;
+    src: url(/modules/darksheet-style/fonts/Icetea.otf) format('truetype');
+} 
+@font-face {
+    font-family: forest;
+    src: url(/modules/darksheet-style/fonts/JFWilwod.ttf) format("opentype") ;
+} 
+@font-face {
+    font-family: forest2;
+    src: url(/modules/darksheet-style/fonts/Castal_Street.ttf) format("opentype") ;
 } 
 .dnd5e.sheet.actor .inventory-list .item-detail {
     font-size: inherit !important;
@@ -2586,7 +2629,7 @@ form.editable.flexcol.plane-of-water {
     background-color: #0019ff;
     color: #b8d1ff;
     font-family: water !important;
-    background: linear-gradient( rgba(0, 0, 0, 0.11), rgb(0, 2, 80) ), url(http://darkest-harvest.de/modules/darksheet-style/img/water.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.11), rgb(0, 2, 80) ), url(/modules/darksheet-style/img/water.jpg);
     background-size: cover;
     /* filter: saturate(2.5); */
 }
@@ -2622,15 +2665,84 @@ h4.deathsavelabel.woundroll.rollable {
 h4.skill-name.rollable {
     font-size: inherit !important;
 }
+/*ice=======================================================*/
+form.editable.flexcol.ice {
+    background-color: #0019ff;
+    color: #b8d1ff;
+    font-family: ice !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.11), rgb(0, 2, 80) ), url(/modules/darksheet-style/img/ice.jpg);
+    background-size: cover;
+    /* filter: saturate(2.5); */
+}
+section.sheet-body.ice {
+	background-image: linear-gradient(#243b5500, #697c99) !important;
+}
+section.center-pane.ice {
+    background-image: linear-gradient(#243b5500, #697c99) !important;
+    font-family: ice2;
+}
+ol.inventory-list.ice {
+	background-image: linear-gradient(#243b5500, #697c99) !important;
+}
+.dnd5e.sheet.actor ul.skills-list.ice {
+	background-image: linear-gradient(#243b5500, #697c99) !important;
+}
+
+.part4.ice {
+    background-image: linear-gradient(#243b5500, #6e54d494) !important;
+    color: #b8d1ff;
+    font-family: ice2;
+}
+.part1.ice.allparts {
+    font-family: ice2;
+}.part2.ice.allparts {
+    font-family: ice2;
+}.part3.ice.allparts {
+    font-family: ice2;
+}
+.dnd5e.sheet.actor ul.skills-list.ice {
+    background-image: linear-gradient(#243b5500, #697c99) !important;
+    font-family: ice2;
+}
+.checks.ice {
+    background-image: linear-gradient(#490a477d, #311d6f87) !important;
+    background: 0;
+	font-family: ice2;
+}
+nav.sheet-navigation.tabs.ice {
+    font-family: ice;
+    padding-bottom: 5px;
+    /* background: #22315f99; */
+    filter: hue-rotate(0deg);
+    /* background-image: linear-gradient(#243b5500, #727898) !important; */
+    color: red !important;
+    background: linear-gradient(#00000000, #4c567c ), url(/modules/darksheet-style/img/ice2.jpg);
+    border-bottom: 1px solid #c7e5ff;
+}
+header.sheet-header.flexrow.ice {
+    background: #26366785;
+}
+.settings.ice {
+    font-family: ice2;
+    background: #3e2a3e;
+    color: white! important;
+    font-size: 13px;
+}
+.biosections.ice {
+    font-family: ice2;
+}
+ol.inventory-list.ice {
+    font-family: ice2;
+}
 /*PLANE-OF-Earth=======================================================*/
 form.editable.flexcol.plane-of-earth {
     background-color: #383434;
     color: #ababab;
     font-family: earth !important;
-    background: linear-gradient( rgba(132, 132, 132, 0.11), rgb(0, 0, 0) ), url(http://darkest-harvest.de/modules/darksheet-style/img/earth.jpg);
+    background: linear-gradient( rgba(132, 132, 132, 0.11), rgb(0, 0, 0) ), url(/modules/darksheet-style/img/earth.jpg);
     background-size: cover;
     /* filter: saturate(2.5); */
-    font-size: 20px !important;
+    font-size: 18px !important;
 }
 section.sheet-body.plane-of-earth {
 	background-image: linear-gradient(#243b5500, #4d454c) !important;
@@ -2659,13 +2771,65 @@ nav.sheet-navigation.tabs.plane-of-earth {
     font-size: 25px;
     filter: grayscale(1);
 }
+/*Forest=======================================================*/
+form.editable.flexcol.forest {
+    background-color: #383434;
+    color: #88fbe9;
+    font-family: forest2 !important;
+    background: linear-gradient( rgba(132, 132, 132, 0.11), rgb(0, 0, 0) ), url(/modules/darksheet-style/img/forest.png);
+    background-size: cover;
+    /* filter: saturate(2.5); */
+    font-size: 17px !important;
+    padding: 2px;
+    margin: -7px;
+    /* border: 1px solid #2a3d56; */
+}
+section.sheet-body.forest {
+    background-image: linear-gradient(#243b5500, #4e8484) !important;
+}
+section.center-pane.forest {
+    background-image: linear-gradient(#243b5500, #4e8484) !important;
+}
+ol.inventory-list.forest {
+    background: #4e5d68;
+    background-image: linear-gradient(#243b5500, #4e8484) !important;
+    text-shadow: 0 0 2px;
+    font-family: auto;
+    font-size: 14px;
+}
+
+.dnd5e.sheet.actor ul.skills-list.forest {
+    background-image: linear-gradient(#243b5500, #4e8484) !important;
+}
+
+.part4.forest {
+    background-image: linear-gradient(#243b5500, #4d454c) !important;
+    color: inherit;
+}
+.checks.forest {
+    background-image: linear-gradient(#243b5500, #4d454c) !important;
+    background: 0;
+}
+.tab.biography.flexcol.forest.active {
+    color: inherit;
+}
+nav.sheet-navigation.tabs.forest {
+    font-family: forest2;
+    padding-bottom: 5px;
+    font-size: 23px;
+    filter: hue-rotate(226deg);
+}
+.settings.forest {
+    background: #514d66;
+    color: white! important;
+}
 /*PLANE-OF-Air=======================================================*/
 form.editable.flexcol.plane-of-air {
     background-color: #ffffff;
     color: #dcf0ff;
     /* text-shadow: 0 0 2px; */
     font-family: air !important;
-    background: linear-gradient( rgba(222, 229, 255, 0.11), rgb(0, 0, 0) ), url(http://darkest-harvest.de/modules/darksheet-style/img/wind.jpg);
+    background: linear-gradient( rgba(222, 229, 255, 0.11), rgb(0, 0, 0) ), url(/modules/darksheet-style/img/wind.jpg);
     background-size: cover;
     font-size: 13px;
     /* filter: saturate(2.5); */
