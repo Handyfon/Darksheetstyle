@@ -20,6 +20,21 @@ textarea:focus {
 .dnd5e.sheet.actor.character .counters .death-saves {
     flex: 1.2;
 }
+.applybutton{
+	border: solid 1px white;
+    padding: 5px;
+    background: #243b55;
+    color: #b5b1d4;
+}
+.applybutton:hover{
+
+    background: #b5b1d4;
+    color: #243b55;
+}
+.colorinput{
+    margin-left: -20px;
+    margin-right: 10px;
+}
 form .form-group, form .form-group-stacked {
     clear: both;
     display: flex;
