@@ -1737,7 +1737,12 @@ img.macro-icon:hover {
 .watercheckbox > span {
     color: #44415c;
 }
-
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 3px;
+    background: #ffffff !important;
+    border: 1px solid #ffffff !important;
+}
 .watercheckbox > input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -2887,6 +2892,14 @@ h4.skill-name.rollable {
 form.editable.flexcol.discord-black {
     background: #202225;
     color: #dcddde;
+}
+button:hover {
+    color: #000000 !important;
+    background: rgb(181, 177, 212) !important;
+}
+button {
+    background: rgb(36, 59, 85) !important;
+    color: #b5b1d4 !important;
 }
 ul.ability-scores.flexrow.discord-black {
     background-image: linear-gradient(#36393F, #36393F) !important;
