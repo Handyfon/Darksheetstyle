@@ -1937,6 +1937,11 @@ img.macro-icon:hover {
 .conditionbutton:hover {
     background-image: linear-gradient(#243b5500, #474a5dfc) !important;
 }
+.tox.tox-tinymce .tox-tbtn {
+    font-size: 12px;
+    padding: 0 2px;
+    background: #b5b1d4 !important;
+}
 .stresscheckbox > input:checked + span::before {
     content: '\1f525';
     display: block;
