@@ -9,6 +9,9 @@ textarea:focus {
     background: #1f2737 !important;
     color: white !important;
 }
+.macro-sheet .form-group.command .furnace-macro-command textarea {
+    -webkit-text-fill-color: inherit !important;
+}
 .roll-table-config ol.table-results .table-header {
     background: rgb(65, 71, 91);
     color: #c7e5ff;
