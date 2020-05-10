@@ -406,6 +406,7 @@ p#calendar-time {
     height: 100%;
     resize: none;
     /* background: url(../ui/parchment.jpg) repeat; */
+    color: black;
     background: rgba(255, 255, 245, 0.8);
 }
 #chat-log .message.whisper {
