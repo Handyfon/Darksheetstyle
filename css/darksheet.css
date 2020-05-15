@@ -155,6 +155,20 @@ a.inline-roll.roll {
 .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle, .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle {
     color: #7d7c73;
 }
+
+#players ol .player-name.self {
+    color: #c7e5ff !important;
+}
+i.fas.fa-search {
+    color: #c7e5ff !important;
+}
+li.player.gm.flexrow {
+    color: red !important;
+    background: #243b55;
+}
+#players ol .player-active.active {
+    box-shadow: 0 0 5px #fff !important;
+}
 #loading {
     display: none;
     position: fixed;
@@ -162,8 +176,8 @@ a.inline-roll.roll {
     left: 120px;
     width: calc(100% - 480px);
     height: 36px;
-    background: rgb(36, 59, 85);
-    border: 2px solid #243b55;
+    background: none;
+    border: none;
     box-shadow: 0 0 0 1000px #243b5587;
     border-radius: 4px;
     /* filter: brightness(1.2); */
@@ -174,6 +188,13 @@ a.inline-roll.roll {
     white-space: nowrap;
     overflow: hidden;
     color: white;
+}
+h3 {
+    font-size: 1.125em;
+    color: #b5b1d4;
+}
+input[type="text"] {
+    color: #243b55;
 }
 #sidebar > * {
     background-color: #243b55;
@@ -391,6 +412,17 @@ p#calendar-time {
     flex: 0 0 30px;
     background-size: 30px;
     margin-right: 5px;
+}
+.tox .tox-tbtn {
+    background: #b5b1d4 !important;
+    border: 1px solid #243b55 !important;
+}
+.tox .tox-tbtn:hover {
+    background: #dee0e2;
+    border: 0;
+    box-shadow: none;
+    color: #222f3e;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .window-app .window-header {
     flex: 0 0 30px;
