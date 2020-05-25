@@ -21,6 +21,14 @@ h4.well-worn {
     color: #dca031 !important;
     text-shadow: 0;
 }
+
+.diceinfo-tooltip {
+    color: white;
+}
+.diceinfo-tooltip .tooltiptext {
+	background: #243b55 !important;
+    color: white !important;
+}
 textarea:focus {
     outline: 2px solid #782e22 !important;
     box-shadow: 0 0 10px #5c4141 !important;

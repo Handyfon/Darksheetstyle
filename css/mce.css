@@ -1,18 +1,6 @@
 .tox :not(svg) {
     color: black !important;
 }
-@font-face {
-  font-family: 'Signika';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/signika/signika.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Signika';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/signika/signikaBold.woff2') format('woff2');
-}
 /* ----------------------------------------- */
 /* Text
 /* ----------------------------------------- */
