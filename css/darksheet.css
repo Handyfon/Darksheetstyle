@@ -10,6 +10,54 @@ button#plus {
 button#minus {
     background-image: linear-gradient(#474a5dfc, #243b5500) !important;
 }
+.relative.cfg__btn-tab-header.px-2.py-1.ml-1.mt-1 {
+    background: #243b55;
+    color: #b5b1d4;
+}
+.item-summary {
+    font: status-bar;
+}
+.autocomplete-suggestions {
+    border: 1px solid #999;
+    background: #fff;
+    overflow: auto;
+    background: #243b55 !important;
+}
+select.ve-foundry-button {
+    width: 100%;
+    margin: 0 1px;
+    background: rgb(36, 59, 85);
+    border: 1px solid #b5b3a4;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "Signika", sans-serif;
+    height: 32px;
+}
+.veapp-ctx-menu__wrp {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    background: url(../media/img/parchment.jpg) repeat;
+    position: fixed;
+    z-index: 1000001100;
+    border: 3px solid black;
+    background: #233a53;
+    border-radius: 2px;
+}
+.dnd5e.sheet.item .sheet-body .item-properties {
+    flex: 0 0 200px;
+    margin: 5px 5px 5px 0;
+    padding-right: 5px;
+    border-right: 2px groove #eeede0;
+    height: 240px;
+    overflow: hidden auto;
+}
+select.hitdice.white {
+    flex: 1;
+    /* font-size: 12px; */
+    height: 22px;
+    width: 112px;
+    background: #00000038 !important;
+}
 h4.pristine {
     color: white !important;
 }
@@ -2620,6 +2668,8 @@ display: inline
     background-image: linear-gradient(#553d2400, #1679164d) !important;
     border: groove 2px #22473b;
     border-image-repeat: initial;
+    width: 30%;
+	margin-left: 12px;
 }
 .part1:hover {
     filter: brightness(1.3);
@@ -2632,9 +2682,10 @@ display: inline
 	border-style: solid;
     border-width: 1px;
 }
-.part2{
+.part2 {
     background-image: linear-gradient(#553d2400, #0000ff47) !important;
-	border: groove 2px #1e2777;
+    border: groove 2px #1e2777;
+    width: 30%;
 }
 .part2:hover {
     filter: brightness(1.3);
@@ -2651,8 +2702,10 @@ display: inline
     border-width: 1px;
 }
 .part3 {
-	background-image: linear-gradient(#553d2400, #b374006e) !important;
-	border: groove 2px #614e2a;
+    background-image: linear-gradient(#553d2400, #b374006e) !important;
+    border: groove 2px #614e2a;
+    width: 30%;
+    margin-right: 12px;
 }
 .part3:hover {
     filter: brightness(1.3);
