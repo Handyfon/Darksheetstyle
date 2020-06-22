@@ -14,6 +14,29 @@ button#minus {
     background: #243b55;
     color: #b5b1d4;
 }
+#forien-quest-log nav.log-tabs a.item {
+    background: #243b55 !important;
+}
+#forien-quest-log nav.log-tabs a.item.active {
+    border: 2px solid #b5b1d4 !important;
+}
+#client-settings.app.window-app.form #config-tabs .settings-list div.form-group button {
+    margin: 0 0 .25rem calc(13px + 1rem);
+    cursor: pointer;
+    flex: unset !important;
+}
+h1 {
+    font-size: 2em;
+    border-bottom: 2px solid #bcb8d7;
+}
+.fa-plus-square:before {
+    content: "\f0fe";
+    color: #b5b1d4;
+}
+.fa-minus-square:before {
+    content: "\f146";
+    color: white;
+}
 .item-summary {
     font: status-bar;
 }
@@ -97,8 +120,9 @@ textarea:focus {
 }
 .open-book article *:not(.chapter-title):not(hr):not(dl) {
     margin: 0 auto;
-    max-width: 31em;
+    max-width: 34em;
     color: #23364b;
+    border: 0;
 }
 .open-book select {
     color: #b1add0 !important;
@@ -169,7 +193,7 @@ filepicker .directory > li {
     background: #243b55;
 }
 .dnd5e.sheet.actor.character .counters .death-saves {
-    flex: 1.2;
+    flex: 1.4;
 }
 .filepicker .display-modes a.active {
     text-shadow: 0 0 6px #ff6400;
@@ -276,6 +300,15 @@ button.dice-tray__math.dice-tray__math--sub:hover {
     background-image: linear-gradient(#365679, #141E30) !important;
     -webkit-box-shadow: 0 0 6px inset #243b55 !important;;
     box-shadow: 0 0 6px inset #243b55 !important;;
+}
+.dnd5e.sheet.actor .spell-slots, .dnd5e.sheet.actor .spell-comps {
+    color: unset !important;
+}
+.dnd5e.sheet .filter-list {
+    max-width: unset !important;
+}
+.spell-detail.spell-slots {
+    display: none;
 }
 button.dice-tray__math.dice-tray__math--add:hover {
     background-image: linear-gradient(#141E30, #365679) !important;
@@ -726,12 +759,17 @@ button:hover {
 a[href] {
     color: #d6d6d6;
 }
-#package-configuration .package-list .package .package-title, #module-management .package-list .package .package-title {
+.dnd5e.chat-card .card-header {
+    border: unset;
+}
+.package .package-title, #module-management .package-list .package .package-title {
     text-decoration: underline;
     font-size: 16px;
     margin: 0 0 0.25em;
+    padding-left: 29px;
     color: #ff6400;
 }
+
 #navigation .nav-item {
     background-image: linear-gradient(#243b55, #141e30) !important;
 }
@@ -1096,7 +1134,7 @@ form .form-group label {
 }
 #client-settings section.content h2.module-header {
     margin: 0.25em 0;
-    color: #ff6400;
+    color: #a3a0c1;
 }
 h2 {
     font-size: 1.5em;
@@ -1208,6 +1246,7 @@ li.skill.flexrow:hover {
     font-size: 20px;
     color: #b5b1d4;
 }
+
 .dnd5e.sheet .filter-list .filter-item:hover {
     background-image: linear-gradient(#243b5563, #474a5db5) !important;
     border-radius: 2px;
@@ -1215,8 +1254,9 @@ li.skill.flexrow:hover {
     color: white;
     border-bottom: 3px solid #7a7971;
 }
+label.conditionbutton {
+    padding: 1px !important;
 }
-
 .dnd5e.sheet .filter-list .filter-item {
     background-image: linear-gradient(#474a5db5, #243b5563) !important;
     border-radius: 2px;
@@ -1229,6 +1269,10 @@ li.skill.flexrow:hover {
     background-image: linear-gradient(#233a53, #375779) !important;
     color: #c3e1fc;
     text-align: center;
+    right: 5px !important;
+}
+.dnd5e.sheet.actor h4.box-title {
+    color: unset !important;
 }
 .trainpointa.green {
     width: 80px;
@@ -1274,14 +1318,15 @@ li.skill.flexrow:hover {
     color: inherit;
     position: absolute;
 }
-.spentlable{
-margin-right: 0px;
-margin-left: 10px;
+.spentlable {
+    margin-right: 0px;
+    margin-left: 10px;
     font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
     text-align: right;
     margin-top: 5px;
     font-size: 25px;
-	position:absolute;
+    position: absolute;
+    right: 89px;
 }
 .trainingssummary{
 	border-bottom: 0px !important;
@@ -1309,7 +1354,9 @@ margin-left: 10px;
     color: #B87333 !important;
 }
 
-
+.dnd5e.sheet.actor .counters .counter h4 {
+    color: unset !important;
+}
 .window-content{
     background-image: linear-gradient(#243B55, #141E30) !important;
     background-size: contain !important;
@@ -1511,6 +1558,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /*.xpbar{visibility: hidden;}
 .experience{visibility: hidden;}*/
+.dnd5e.sheet.actor.character .sheet-header .charlevel {
+    flex: 0 0 20px;
+    height: 20px;
+    font-size: 24px;
+    color: unset !important;
+}
 .dnd5e.sheet.actor.character .sheet-header .charlevel .xpbar .bar {
     height: 4px;
     margin: 1px;
@@ -1518,11 +1571,6 @@ input[type=number]::-webkit-outer-spin-button {
     background: #9eff0c;
     border: 1px solid #000;
     border-radius: 2px;
-}
-.dnd5e.sheet.actor.character .sheet-header .charlevel {
-    flex: 0 0 180px;
-    padding: 0 5px 2px;
-    margin-top: -15px;
 }
 span.max {
     color: #b5b1d4;
@@ -1657,6 +1705,9 @@ select.hitdice.black {
 #module-management .module-description {
     color: #b5b1d4;
 }
+.dnd5e.sheet.actor .counters .counter input[type="text"] {
+    margin-left: -12px;
+}
 .fatecheckbox {
     display: inline-flex;
     cursor: pointer;
@@ -1671,9 +1722,9 @@ margin-bottom: 3px !important;
 .fatecheckbox > span {
     color: #41465c;
 }
-.fatepoints{
+.fatepoints {
     width: 40px;
-	margin-top: 5px;
+	margin-top: 0px;
     position: relative;
     background-color: #013c6b;
     margin-left: -20px;
@@ -1682,9 +1733,9 @@ margin-bottom: 3px !important;
     text-shadow: 0px 0px 5px #b5b1d4;
 	
 }
-.exhaustionpoints{
+.exhaustionpoints {
     width: 40px;
-	margin-top: 5px;
+	margin-top: 0px;
     position: relative;
     background-color: #6b5c01;
     margin-left: -20px;
@@ -1692,9 +1743,9 @@ margin-bottom: 3px !important;
     text-align: center;
     text-shadow: 0px 0px 5px red;
 }
-.heropoints{
+.heropoints {
     width: 40px;
-	margin-top: 5px;
+	margin-top: 0px;
     position: relative;
     background-color: green;
     margin-left: -25px;
@@ -1702,9 +1753,9 @@ margin-bottom: 3px !important;
     text-align: center;
     text-shadow: 0px 0px 5px red;
 }
-.inspirationpoints{
+.inspirationpoints {
     width: 40px;
-	margin-top: 5px;
+	margin-top: 0px;
     position: relative;
     background-color: green;
     margin-left: -20px;
@@ -1902,11 +1953,15 @@ margin-bottom: 3px !important;
     border-top-style: dotted;
     padding: 10px;
 }
+.dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
+    color: unset !important;
+}
 .dnd5e.sheet.actor .counters {
     flex: 0 0 100%;
-    border-bottom: 2px groove #eeede0;
+    border-bottom: 1px #ffffff57 solid;
     margin-top: px;
     border-top: 0;
+    place-items: center;
 }
 .deathcheckbox > input:checked {
     border: 1px solid #b84141;
@@ -2626,7 +2681,28 @@ color:#b5b1d4;
 select {
 background:#243B55;
 }
-
+#forien-quest-log section.log-body {
+    min-height: calc(90% - 40px);
+    /* height: 10% !important; */
+}
+#forien-quest-log nav.log-tabs.bookmarks a.item {
+    text-align: center;
+}
+#forien-quest-log nav.log-tabs.bookmarks a.item.active {
+    background: #b5b1d4 !important;
+    color: #243b55 !important;
+    border: 2px solid #243b55 !important;
+}
+#forien-quest-log-form fieldset.tinymce-fieldset .editor .editor-content {
+    height: 100% !important;
+    border: 3px solid !important;
+}
+button.import-dd {
+    min-width: -webkit-fill-available;
+}
+button.quest-log-btn {
+    min-width: -webkit-fill-available;
+}
 .dice-calculator__input-wrapper > textarea {
 color: #b5b1d4;
 }
@@ -2636,6 +2712,9 @@ form button {
     border: 2px groove #f0f0e0;
     color: #b5b1d4;
 }
+button.quest-log-btn {
+    min-width: -webkit-fill-available;
+}
 .polyglot-lang-select select {
     height: 24px;
     background: rgb(36, 59, 85) !important;
@@ -2643,8 +2722,8 @@ form button {
 .userscript-container{
 	 background-color: #f9f9f900 !important;
 }
-.userscript-listing-card__body{
-	 background: rgba(0, 0, 0, 0.9) !important;
+.userscript-listing-card__body {
+    background: rgb(36, 59, 85) !important;
 }
 .mce-content-body {
     background: white !important;
@@ -3060,8 +3139,12 @@ nav.sheet-navigation.tabs.plane-of-water {
     padding-bottom: 5px;
     filter: hue-rotate(0deg);
 }
+dnd5e.sheet.actor h4.box-title {
+    color: unset !important;
+}
 h4.deathsavelabel.woundroll.rollable {
     font-size: inherit !important;
+    margin-right: -74px;
 }
 h4.skill-name.rollable {
     font-size: inherit !important;
