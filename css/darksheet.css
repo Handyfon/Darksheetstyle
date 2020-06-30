@@ -14,6 +14,13 @@ button#minus {
     background: #243b55;
     color: #b5b1d4;
 }
+.training .progress-bar .training-completion {
+    color: #111111;
+    background-color: rgba(156, 251, 1, 0.48);
+    border-radius: 4px;
+    height: 100%;
+    line-height: 22px;
+}
 #forien-quest-log nav.log-tabs a.item {
     background: #243b55 !important;
 }
@@ -811,8 +818,11 @@ li.compendium-entity {
 }
 
 .dmgBtn-container-br button {
-	border-radius: 0;
-    background-color: #b5b1d4;
+    border-radius: 0;
+    background-color: #b5b1d4 !important;
+}
+.dice-roll .dice-total.failure {
+    text-shadow: 0 0 3px black !important;
 }
 .dnd5e.chat-card .card-header h3 {
     flex: 1;
@@ -1177,9 +1187,10 @@ option {
     color: indianred;
 }
 
-.dice-roll .dice-total.success {
+dice-roll .dice-total.success {
     color: #9dff00;
     text-shadow: 0 0 3px;
+    background: green !important;
 }
 li.skill.flexrow:hover {
     filter: brightness(1.5) drop-shadow(0px 0px 6px black);
@@ -1198,8 +1209,19 @@ li.skill.flexrow:hover {
     color: #b5b1d4;
     font-size: 12px;
 }
+h4.dice-total.dice-row-item.red-base-die.success {
+    background: green;
+}
+.better-npc-sheet-container .better-npc-sheet .npc-header .header-middle .details select, .better-npc-sheet-container .better-npc-sheet .npc-header .header-middle .details input {
+    color: #ffe0e0;
+}
+.typing-notify {
+    margin-top: -30px;
+	bottom:unset!important;
+}
 .dice-roll .dice-total.failure {
-    color: #ff0300;
+    color: #ffffff;
+    background: red;
     text-shadow: 0 0 3px;
 }
 .dice-roll .dice-total:hover {
@@ -1524,9 +1546,6 @@ ol.inventory-list.black {
 }
 .item-detail{
 width: 58px;
-}
-.hidden{
-visibility:hidden;
 }
 .titledescription{
 background-color: #fff0;
@@ -2688,6 +2707,20 @@ background:#243B55;
 #forien-quest-log nav.log-tabs.bookmarks a.item {
     text-align: center;
 }
+#forien-quest-log nav.log-tabs.bookmarks {
+    display: block !important;
+    left: 0px !important;
+    margin-top: 31px;
+    top: -1px !important;
+    z-index: 0 !important;
+    margin-left: 0px !important;
+    display: inline-flex !important;
+}
+
+#forien-quest-log section.log-body .tab .table table tr {
+    height: 30px;
+    color: white;
+}
 #forien-quest-log nav.log-tabs.bookmarks a.item.active {
     background: #b5b1d4 !important;
     color: #243b55 !important;
@@ -2696,6 +2729,47 @@ background:#243B55;
 #forien-quest-log-form fieldset.tinymce-fieldset .editor .editor-content {
     height: 100% !important;
     border: 3px solid !important;
+}
+#forien-quest-log section.log-body .tab h1 {
+    margin: 0;
+    margin-top: 20px !important;
+}
+.forien-quest-preview .quest-body .details .tasks-gc .tasks-box {
+    overflow: auto;
+    margin-right: 10px;
+	padding: 10px;
+    border: 3px solid !important;
+}
+.forien-quest-preview .quest-body .details .description-gc .editor .editor-content {
+    height: 100%;
+    overflow: auto;
+    padding: 10px;
+    border: 3px solid !important;
+}
+.forien-quest-preview .quest-body .gmnotes .editor .editor-content {
+    height: 100%;
+    padding: 10px;
+    border: 3px solid !important;
+}
+.forien-quest-preview .quest-body .details .rewards-gc .rewards-box {
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    border: 3px solid !important;
+    padding: 10px;
+}
+
+#forien-quest-log section.log-body {
+    min-height: calc(89% - 40px) !important;
+}
+#forien-quest-log nav.log-tabs.bookmarks {
+    width: 100% !important;
+}
+#forien-quest-log nav.log-tabs.bookmarks a.item {
+    text-align: center !important;
+}
+button.quest-log-btn {
+    min-width: -webkit-fill-available;
 }
 button.import-dd {
     min-width: -webkit-fill-available;
@@ -2888,6 +2962,9 @@ margin-top:15px;
 	padding: 10px;
 	padding-bottom: 0;
 	padding-top: 0;
+}
+.dnd5e.sheet.actor ul.skills-list li.skill .skill-passive {
+    color: #bab8ac;
 }
 .checks {
     background: #653b60;
