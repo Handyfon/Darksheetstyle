@@ -10,6 +10,9 @@ button#plus {
 button#minus {
     background-image: linear-gradient(#474a5dfc, #243b5500) !important;
 }
+.graph.__________cytoscape_container {
+    background: white;
+}
 .relative.cfg__btn-tab-header.px-2.py-1.ml-1.mt-1 {
     background: #243b55;
     color: #b5b1d4;
