@@ -10,8 +10,43 @@ button#plus {
 button#minus {
     background-image: linear-gradient(#474a5dfc, #243b5500) !important;
 }
-.graph.__________cytoscape_container {
-    background: white;
+.narrator-frame {
+    height: 102%;
+    width: 133%;
+    left: 0;
+    margin-left: -9px;
+    transition: 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+	margin-top: -16px;
+}
+.narrator-sidebarBG {
+    height: 100%;
+    width: 305px;
+    right: 0;
+    transition: 0.5s ease-in-out;
+    box-shadow: inset 0 0 2000px 100px black;
+    background: black;
+    opacity: 0;
+    margin-top: -16px;
+}
+.tabbedchatlog .item.active {
+    color: #243b55 !important;
+    color: #FFF;
+    border: 1px solid #243b55 !important;
+    background: #b5b1d4;
+    border-bottom: none;
+    box-shadow: 0 0 6px inset #a4a2c4 !important;
+}
+.tabs .item.active {
+    text-shadow: 0 0 10px #243b55;
+}
+.tabbedchatlog.tabs {
+    flex: 0;
+    margin: 0 0 5px;
+    border-bottom: 1px solid #1a273c !important;
+    box-shadow: 0 0 10px #1d2e44 !important;
 }
 .relative.cfg__btn-tab-header.px-2.py-1.ml-1.mt-1 {
     background: #243b55;
@@ -83,6 +118,7 @@ select.ve-foundry-button {
     border-right: 2px groove #eeede0;
     height: 240px;
     overflow: hidden auto;
+    height: 95%;
 }
 select.hitdice.white {
     flex: 1;
@@ -608,10 +644,7 @@ background-image: linear-gradient(#6db2ff73, #4e6ea9) !important;
 p#calendar-time {
     color: black;
 }
-.dnd5e.sheet.actor.character {
-    min-width: 720px !important;
-    min-height: 736px;
-}
+
 .darksheettint{
     filter: drop-shadow(2px 4px 6px black);
     mix-blend-mode: color-dodge;
@@ -1535,6 +1568,7 @@ ol.inventory-list.black {
 }
 .dnd5e.sheet.actor ul.skills-list.black {
     background-image: linear-gradient(#243b5500, #4c4c4cfc) !important;
+    height: 100%;
 }
 .app.sheet .editor-content {
     background-image: 0 !important;
