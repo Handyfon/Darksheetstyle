@@ -1,3 +1,137 @@
+#soundboard-app .btn:hover {
+    /* color: #b5b1d4 !important; */
+    background: linear-gradient(0deg, #00000073, transparent) !important;
+    box-shadow: unset;
+}
+.window-app .window-header .window-title {
+    margin: 0;
+    word-break: break-all;
+    color: black;
+}
+a.close {
+    color: black;
+}
+div#soundboard-app {
+    border: unset;
+    background: black;
+}
+button.dropdown-item.active {
+    background: #0000003d !important;
+    border-top: 1px solid;
+}
+.soundboard-container .dropdown-item.active, .soundboard-container .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white !important;
+}
+button.dropdown-item.active:hover {
+    box-shadow: unset;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.dropdown-menu.show {
+    background: #1a283e;
+    border: 4px solid black;
+    transition: 0.2s;
+}
+#soundboard-app .dropdown-smalltext {
+    margin: 0 25px;
+    color: #8c2b2b;
+    text-shadow: 0px 0px;
+}
+#soundboard-app .toolbar-btn.active {
+    background: #9dff0021 !important;
+    border: #9dff0075 2px solid;
+}
+.soundboard-container h3, .soundboard-container .h3 {
+    font-size: 1.75rem;
+    /* color: white !important; */
+    background: #0000005e;
+}
+#soundboard-app .window-header {
+    background: #b5b1d4;
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+}
+#soundboard-app h2 {
+    border-bottom: 2px solid #1a283e;
+}
+.soundboard-container .btn-outline-dark:not(:disabled):not(.disabled):active, .soundboard-container .btn-outline-dark:not(:disabled):not(.disabled).active, .soundboard-container .show > .btn-outline-dark.dropdown-toggle {
+    color: #fff;
+    background-color: unset;
+    border-color: unset;
+    /* color: black !important; */
+    filter: drop-shadow(2px 4px 6px black);
+}
+#soundboard-app .btn:active {
+    color: white !important;
+    background: linear-gradient(0deg, transparent, #00000073) !important;
+    transition: 0s;
+    border: unset;
+}
+#soundboard-app .sb-play-button:hover {
+    box-shadow: 0px 4px 16px;
+    border: 1px solid black;
+    background: unset !important;
+}
+.soundboard-container .btn-outline-dark:hover {
+    background-color: #b5b1d4;
+}
+.soundboard-container button, .soundboard-container select {
+    text-transform: none;
+    background: unset !important;
+}
+#soundboard-app .sb-play-button {
+    border: 1px solid #1a283e;
+}
+.soundboard-container button, .soundboard-container select :hover {
+    text-transform: none;
+    background: unset !important;
+}
+.soundboard-container .btn-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+    background: #17a2b83b;
+}
+#soundboard-app #stop-all {
+    line-height: 0px;
+    border: unset;
+    background: #8c2b2b !important;
+    color: white !important;
+}
+#soundboard-app .btn:hover {
+    color: #b5b1d4 !important;
+    background: linear-gradient(0deg, #00000073, transparent);
+}
+#soundboard-app .btn {
+    color: #b5b1d4 !important;
+    background: #00000061;
+}
+#soundboard-app #toolbar {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(#1a283e, #21374f);
+    height: 25px;
+}
+#soundboard-app #volume-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: var(--SoundBoard-toolbar-color);
+    background-image: linear-gradient(#29354c, #1a283e);
+    padding: 5px 25px 5px 15px;
+    z-index: 1;
+    height: 36px;
+    border-radius: 0 0 5px 5px;
+}
+input#sound-search {
+    background: #1a283e;
+    /* color: black !important; */
+}
 button#minus:hover {
     background-image: linear-gradient(#243b5500, #474a5dfc) !important;
 }
@@ -9,6 +143,12 @@ button#plus {
 }
 button#minus {
     background-image: linear-gradient(#474a5dfc, #243b5500) !important;
+}
+a.inline-roll.inline-result.expanded {
+    background: black;
+}
+a.inline-roll.inline-result {
+    background: #243b55;
 }
 .narrator-frame {
     height: 102%;
