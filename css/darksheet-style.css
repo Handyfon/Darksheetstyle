@@ -45,6 +45,7 @@ label.exhaustiontip {
 h4.deathsavelabel.woundroll.rollable.darkcheck {
     flex: 0.8;
     text-align: center;
+	background-image: unset !important;
 }
 .dnd5e.sheet.actor .inventory-list .item-controls {
     flex: 0 0 44px;
@@ -2111,6 +2112,7 @@ margin-bottom: 3px !important;
     border-bottom-style: dotted;
     border-top-style: dotted;
     padding: 10px;
+    background-image: unset !important;
 }
 .dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
     color: unset !important;
@@ -2286,6 +2288,7 @@ img.macro-icon:hover {
     border-top-style: dotted;
     padding: 10px;
     background: #00000052;
+	background-image: unset !important;
 }
 .watercheckbox.green > input {
     -webkit-appearance: none;
@@ -2357,6 +2360,7 @@ img.macro-icon:hover {
     border-bottom-style: dotted;
     border-top-style: dotted;
     padding: 10px;
+    background-image: unset !important;
 }
 
 .foodcheckbox > input:checked {
@@ -2398,6 +2402,7 @@ img.macro-icon:hover {
     border-top-style: dotted;
     transform: scale(0.6);
     padding: 10px;
+	background-image: unset !important;
 }
 
 .stresscheckbox > input:checked {
