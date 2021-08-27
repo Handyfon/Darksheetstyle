@@ -1,9 +1,78 @@
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+    -webkit-filter: unset;
+}
+.dnd5e.sheet.actor .sheet-header .summary input, .dnd5e.sheet.actor .sheet-header .summary span {
+    line-height: 20px;
+}
+input.trainingcheckbox:hover {
+    color: #ffffff;
+    background: #ffffff;
+    filter: brightness(2.5);
+}
+input.trainingcheckbox:before {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #808080;
+    background: #000;
+    content: '💪';
+    align-items: center;
+    text-align: center;
+    filter: grayscale(1);
+}
+input.trainingcheckbox:checked:after {
+    background: #00380c;
+    content: '💪';
+    color: #fbff00;
+    align-items: center;
+    text-align: center;
+    filter: hue-rotate(
+45deg
+);
+}
+input.trainingcheckbox:after {
+    position: relative;
+    display: block;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    content: "";
+    background: #000000e0;
+}
+input.woundcheckbox:before{
+	    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #808080;
+    content: "";
+    background: #FFF;
+}
+input.woundcheckbox:checked:after {
+    content: '✔️';
+    color: #00ff1f !important;
+    text-align: center;
+    background: #0d3300;
+}
+input.woundcheckbox:after {
+    position: relative;
+    display: block;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    content: "";
+    background: #3a3a3a;
+}
 h2.gray {
     color: #c3e1fb;
 }
-label.dicelabel2.burnoutclick.burnoutdie.rollable {
-    border-radius: 5px;
-    background: #441010;
+h4.window-title {
+    color: black;
 }
 .crash-training .progress-bar .crash-training-completion {
     background-color: rgb(199 229 255);
@@ -31,10 +100,6 @@ label.dicelabel2.burnoutclick.burnoutdie.rollable {
 }
 .dnd5e.sheet.item .itemcollection-details h3 {
     color: #c3c3c3;
-}
-.dnd5e.sheet.actor .spellcasting-ability select {
-    margin: 0;
-    flex: 0 0 120px !important;
 }
 .dnd5e .form-group label {
     color: #c3c3c3 !important;
@@ -81,9 +146,7 @@ label.exhaustiontip {
     padding: 4px;
     border-radius: 5px;
 }
-.check:hover {
-    background-image: linear-gradient(#21212187, #6363638f) !important;
-}
+
 .darkcheck {
     background-image: linear-gradient(#6363638f, #21212187) !important;
     padding: 0px;
@@ -111,32 +174,44 @@ h4.deathsavelabel.woundroll.rollable.darkcheck {
     background: #00000052;
 }
 input#currencypp {
-    background: #e5e4e2 !important;
-    color: #2d201d !important;
+    background: #6d6d6d !important;
+    color: #ffffff !important;
     font-weight: bold;
     box-shadow: inset 0 0 3px 1px #19273b;
-    border: 1px solid #1b2a3f;
+    border: 1px solid #000000;
+    border-radius: 14px;
 }
 input#currencygp {
-    background: gold !important;
-    color: #2d201d !important;
+    background: #ffd7009c !important;
+    border-radius: 14px;
+    color: #ffe000 !important;
     font-weight: bold;
     box-shadow: inset 0 0 3px 1px #19273b;
-    border: 1px solid #1b2a3f;
+    border: 1px solid #000000;
 }
 input#currencysp {
-    background: #b4b5b7 !important;
-    color: #2d201d !important;
+    background: #b4b5b773 !important;
+    color: #d2d2d2 !important;
     font-weight: bold;
     box-shadow: inset 0 0 3px 1px #19273b;
-    border: 1px solid #1b2a3f;
+    border: 1px solid #000000;
+    border-radius: 14px;
 }
 input#currencycp {
-    background: #a76b36 !important;
-    color: #2d201d !important;
+    background: #a76b36a8 !important;
+    color: #f39d00 !important;
     font-weight: bold;
     box-shadow: inset 0 0 3px 1px #19273b;
-    border: 1px solid #1b2a3f;
+    border: 1px solid #000000;
+    border-radius: 14px;
+}
+input#currencyep {
+    background: #8e5e16a8 !important;
+    color: #f39d00 !important;
+    font-weight: bold;
+    box-shadow: inset 0 0 3px 1px #19273b;
+    border: 1px solid #000000;
+    border-radius: 14px;
 }
 ol.currency.flexrow {
     background: #00000040;
@@ -159,8 +234,11 @@ label.notchlabel {
     color: #c3c3c3;
     font-size: 15px;
 }
+.dnd5e.sheet.actor .inventory-filters .currency {
+    place-items: center;
+}
 .dnd5e.sheet.actor .inventory-list {
-    padding: 0px;
+    padding: 10px;
     background-image: linear-gradient(#00000073, #0000007a) !important;
 }
 ol.inventory-list.items-list.ethck-downtime {
@@ -223,8 +301,6 @@ input.heropoints.points {
 .trainpointa {
     width: 80px !important;
     position: relative;
-    background-image: linear-gradient(#233a53, #375779) !important;
-}
 }
 .points {
     text-shadow: 0px 0px 4px black!important;
@@ -253,7 +329,6 @@ input[type="text"], input[type="number"], input[type="password"], input[type="da
 .window-app .window-header .window-title {
     margin: 0;
     word-break: break-all;
-    color: black;
 }
 a.close {
     color: black;
@@ -384,16 +459,19 @@ input#sound-search {
     /* color: black !important; */
 }
 button#minus:hover {
-    background-image: linear-gradient(#2d201d00, #474a5dfc) !important;
+    background-image: linear-gradient(#000000, #505050fc) !important;
 }
 button#plus:hover {
-    background-image: linear-gradient(#2d201d00, #474a5dfc) !important;
+    background-image: linear-gradient(#000000, #505050fc) !important;
 }
 button#plus {
-     background-image: linear-gradient(#474a5dfc, #2d201d00) !important; 
+    background-image: linear-gradient(#505050fc, #000000fc) !important;
+	margin-left: 3px;
+    width: 14px !important;
 }
 button#minus {
-    background-image: linear-gradient(#474a5dfc, #2d201d00) !important;
+    background-image: linear-gradient(#505050fc, #000000fc) !important;
+    width: 14px !important;
 }
 a.inline-roll.inline-result.expanded {
     background: black;
@@ -517,11 +595,24 @@ h4.scarred {
     color: #ff0000 !important;
     text-shadow: 0 0 2px;
 }
-h4.well-worn {
-    color: #ff8d00 !important;
-}
 h4.worn {
     color: #fff46b;
+}
+li.item.flexrow.true {
+    background: #81ff8112;
+    border-radius: 15px;
+    margin-bottom: 2px;
+    border-left: 1px solid #5fff5f !important;
+    border-right: 1px solid #5fff5f !important;
+}
+.dnd5e.sheet.actor .inventory-list .item .item-name .item-image.worn {
+    filter: sepia(100%) saturate(300%) brightness(69%) hue-rotate(368deg);
+}
+.dnd5e.sheet.actor .inventory-list .item .item-name .item-image.well-worn {
+    filter: sepia(100%) saturate(300%) brightness(69%) hue-rotate(338deg);
+}
+.dnd5e.sheet.actor .inventory-list .item .item-name .item-image.scarred {
+    filter: sepia(100%) saturate(371%) brightness(57%) hue-rotate(322deg);
 }
 .diceinfo-tooltip {
     color: white;
@@ -638,7 +729,10 @@ filepicker .directory > li {
     background: #2d201d;
     color: #c3c3c3;
 }
+
 label.randomnotch.rollable {
+	border-bottom: 3px solid #b5b3a4 !important;
+    border-radius: 14px;
     background: #2d201d;
     border: 1px solid #19273c;
     text-shadow: 0 0 1px;
@@ -741,14 +835,8 @@ button.dice-tray__math.dice-tray__math--add:hover {
     margin-right: 10px;
 }
 form .form-group, form .form-group-stacked {
-    clear: both;
-    display: flex;
-    flex-direction: row;
     background: #0000002b;
-    padding: 10px;
-    color: white;
-    flex-wrap: wrap;
-    margin: 3px 0;
+	align-items: center;
 }
 
 .dnd5e.sheet.actor .spell-school, .dnd5e.sheet.actor .spell-action, .dnd5e.sheet.actor .spell-target {
@@ -900,14 +988,7 @@ section.sheet-body.black {
     margin-top: 10px;
 }
 /*TRAINING*/
-input[type="text"]::placeholder {
-    color: inherit;
-    filter: grayscale(1);
-}
-input[type="number"]::placeholder {
-    color: inherit;
-    filter: grayscale(1);
-}
+
 .window-app {
     display: flex;
     flex-direction: column;
@@ -1051,7 +1132,7 @@ p#calendar-time {
     line-height: 30px;
     border-bottom: 1px solid #c3c3c3;
     background: #c3c3c3;
-    color: #2d201d;
+    color: black;
 }
 #chat-form textarea {
     width: 100%;
@@ -1062,12 +1143,15 @@ p#calendar-time {
     background: rgba(255, 255, 245, 0.8);
 }
 #chat-log .message.whisper {
-    background: #c3c3c34a;
-    border: 5px solid #000000f2;
+    background: #c3c3c312;
     filter: drop-shadow(2px 4px 6px black);
-    border: 4px solid #00000000;
+    border: 5px solid #ffffff73;
     margin: 5px;
     border-radius: 0;
+    font-style: italic;
+}
+#chat-log .message.whisper.blind {
+    border-style: double;
 }
 #chat-log .message .table-result img.result-image {
     background: #99334b;
@@ -1429,14 +1513,14 @@ border-width: 5px;
     text-shadow: 0px 0px 6px black;
 }
 .dnd5e.sheet .editable .rollable:hover {
-    text-shadow: 0 0 10px black;
+    color: #c3c3c3 !important;
+    text-shadow: 0 0 10px red;
+    cursor: pointer;
 }
 .dnd5e.sheet .items-list .item .item-name {
     color: unset;
 }
-.dnd5e.sheet.actor .inventory-list .item {
-    border-bottom: 1px solid #c9c7b8;
-}
+
 .dnd5e.sheet.actor.character .encumbrance .encumbrance-bar {
     background: #3f6693;
     background: linear-gradient(to right, #3f6693,#3f6693,#3f6693, #ff0083);
@@ -1502,15 +1586,6 @@ form .form-group label {
 h2 {
     font-size: 1.5em;
     border-bottom: 1px solid #ffffff66;
-}
-form .form-group, form .form-group-stacked {
-    clear: both;
-    display: flex;
-    flex-direction: row;
-    background: #0000002b;
-    padding: 10px;
-    flex-wrap: wrap;
-    margin: 3px 0;
 }
 form .form-header {
     margin: 0;
@@ -1625,6 +1700,7 @@ h4.dice-total.dice-row-item.red-base-die.success {
     background-image: linear-gradient(#484848b5, #00000063) !important;
     border-radius: 2px;
     font-size: inherit !important;
+    border-radius: 10px;
 }
 .dnd5e.sheet.actor h4.box-title {
     color: unset !important;
@@ -1757,10 +1833,21 @@ input.trainpointa.plane-of-fire {
     background: #0000002b;
     border: 1px solid;
 }
-.dnd5e.sheet.actor ul.attributes li.attribute:hover {
-    background-image: linear-gradient(#3a3a3a73, #59595900) !important;
-    border: inherit;
-    background: #0000002b;
+.dnd5e.sheet.actor.character ul.skills-list {
+    flex: 0 0 212px;
+    height: 97%;
+}
+.dnd5e.sheet.actor.character ul.skills-list li.skill {
+    padding: 5px;
+    border-bottom: 1px solid #ffffff42;
+    background: #00000054;
+    height: 26px;
+    color: #e6e6e640;
+    border-radius: 20px;
+}
+.dnd5e.sheet .items-list {
+    margin-top: 5px;
+    padding: 10px;
 }
 .dnd5e.sheet.actor ul.attributes li.attribute {
     background-image: linear-gradient(#00000054, #ffffff00) !important;
@@ -1770,10 +1857,9 @@ input.trainpointa.plane-of-fire {
     border-radius: 00;
 }
 .dnd5e.sheet.actor ul.attributes li.attribute:hover {
-    background-image: linear-gradient(#00000054, #ffffff00) !important;
-    border: inherit;
+    background-image: linear-gradient(#3a3a3a73, #59595900) !important;
+    /* border: inherit; */
     background: #0000002b;
-    border: 1px solid #c3c3c3;
 }
 .dnd5e.sheet .sheet-header {
     border-bottom: 2px groove #c3c3c3;
@@ -1869,7 +1955,6 @@ input[type=number]::-webkit-outer-spin-button {
     height: 20px;
     font-size: 24px;
     color: unset !important;
-	position: unset !important;
 }
 .dnd5e.sheet.actor.character .sheet-header .charlevel .xpbar .bar {
     height: 4px;
@@ -1878,6 +1963,24 @@ input[type=number]::-webkit-outer-spin-button {
     background: #9eff0c;
     border: 1px solid #000;
     border-radius: 2px;
+}
+.dnd5e.sheet.actor .ability-scores {
+    margin-left: 5px;
+    background: #00000047;
+    height: 100%;
+    border: unset;
+}
+table tr:nth-child(even) {
+    background-color: rgb(0 0 0 / 37%);
+}
+.dnd5e.sheet.actor .ability-scores .ability:last-child {
+    border-bottom: 1px solid;
+    margin-bottom: -3px;
+}
+li.skill.flexrow.proficient {
+    background: #00800021 !important;
+    color: #9aff9a !important;
+    font-weight: bold !important;
 }
 span.max {
     color: #c3c3c3;
@@ -2238,8 +2341,11 @@ margin-bottom: 3px !important;
     margin-top: 4px;
     margin-left: -20px;
     color: #c3c3c3;
+    background: #750000;
 }
-
+.deathcheckbox > input:hover {
+    background-image: linear-gradient(#17000087, #b10c0c8f) !important;
+}
 .bloodiedcheckbox {
     display: inline-flex;
     cursor: pointer;
@@ -2691,14 +2797,7 @@ label.weather-collapse {
     flex-wrap: wrap;
     padding: 0 0;
 }
-p {
-    margin: 0.5em 0;
-    color: #c3c3c3 !important;
-}
-.p {
-    margin: 0.5em 0;
-    color: #c3c3c3 !important;
-}
+
 .biography{
     color: gray;
 }
@@ -3170,12 +3269,7 @@ margin-top:15px;
 #module-management .package-list .package-title, #module-management .package-list .package-metadata, #module-management .package-list .package-description {
     color: #c3c3c3;
 }
-.ammostyle {
-    background-image: linear-gradient(#474a5dfc, #2d201d00) !important;
-}
-.ammostyle:hover {
-    background-image: linear-gradient(#2d201d00, #474a5dfc) !important;
-}
+
 .inventoryslots{
     width: 30px;
     height: 20px;
@@ -3211,9 +3305,7 @@ margin-top:15px;
     background-size: contain !important;
     color: #fbc500;
 }
-.dnd5e.sheet.actor .inventory-list {
-    padding: 0px;
-}
+
 form.editable.flexcol.blue {
 	margin: -5px;
     padding: 5px;
@@ -3392,8 +3484,7 @@ input.biotextflex:focus {
     color: #cecece !important;
 }
 .check:hover {
-    background: #21293a;
-    color: #c3c3c3;
+    background-image: linear-gradient(#00000087, #4c4c4c8f) !important;
 }
 
 .check {
