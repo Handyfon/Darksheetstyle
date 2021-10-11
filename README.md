@@ -1,3 +1,4 @@
+<b>SUPPORT: https://discord.gg/gs5hAgxBx3</b>
 # Darksheetstyle
 Darksheet Styling
 
