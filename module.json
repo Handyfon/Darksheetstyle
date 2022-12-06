@@ -2,7 +2,7 @@
 	"name": "darksheet-style",
 	"title": "styling for the darksheet 5 sheet",
 	"description": "Adds styling to the 5e sheet",
-	"version": "4.5.1",
+	"version": "10.1",
 	"author": "Handyfon#1802",
 	"systems": ["dnd5e"],
 	"styles": ["css/darksheet-style.css", "css/mce.css"],
@@ -10,6 +10,6 @@
     "url": "https://github.com/Handyfon/Darksheetstyle",
     "manifest": "https://raw.githubusercontent.com/Handyfon/Darksheetstyle/master/module.json",
     "download": "https://github.com/Handyfon/Darksheetstyle/raw/master/darksheet-style.zip",
-	"minimumCoreVersion": "v9",
-	"compatibleCoreVersion": "v9"
+	"minimumCoreVersion": "10",
+	"compatibleCoreVersion": "10"
 }
